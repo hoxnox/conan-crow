@@ -6,7 +6,7 @@ class CrowSSLConan(NxConanFile):
     name = "crow"
     version = "4e39b23e"
     license = "BSD"
-    url = "https://github.com/hoxnox/procman"
+    url = "https://github.com/hoxnox/conan-crow"
     license = "https://raw.githubusercontent.com/ipkn/crow/4e39b23e455e455f1878b3e68d729a1737f3e431/LICENSE"
     settings = "os", "compiler", "build_type", "arch"
     build_policy = "missing"

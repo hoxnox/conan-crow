@@ -2,7 +2,7 @@ from nxtools import NxConanFile
 from conans import tools
 
 
-class CrowSSLConan(NxConanFile):
+class CrowConan(NxConanFile):
     name = "crow"
     version = "4e39b23e"
     license = "BSD"
@@ -11,7 +11,8 @@ class CrowSSLConan(NxConanFile):
     settings = "os", "compiler", "build_type", "arch"
     build_policy = "missing"
     description = "Crow is C++ microframework for web. (inspired by Python Flask)"
-    requires = ("boost/1.64.0@hoxnox/stable")
+    requires = ("boost/1.66.0@hoxnox/stable")
+    options = {}
 
     def do_source(self):
         self.retrieve("417064e3a2238c3877877e5ed9902686c87596440d426b893027abd7a5b5a52d",
